@@ -6,34 +6,57 @@ include_in_header: true
 
 # Post-Mortem 🏖️
 
-### Successes
+### Successes 🎯
 
-One of our biggest strengths was our ability to reprioritize tasks effectively. When refactoring became a more pressing need than new feature development, we adjusted our workflow to address it first. In the third iteration of the project, we made a concentrated effort to focus on increasing our code coverage and addressing grader feedback. This adaptability helped us focus on the parts that mattered and kept us on course throughout the project.
+Our greatest strength throughout this project was our ability to adapt and reprioritize effectively. When we identified that refactoring needed to take precedence over new feature development, we quickly adjusted our workflow. During the third iteration, we successfully shifted our focus toward increasing code coverage and addressing grader feedback. This adaptability ensured we remained focused on what mattered most at each stage of the project.
 
-### Setbacks  
+### Challenges 🥀
 
-However, our biggest challenge was communication and awareness of changes. At times, code modifications were made without the entire team being informed, which led to deficiencies in code quality due to a lack of proper reviews. Being more active in cluing in members about current developments and establishing a more structured review process would have helped prevent these issues better.
+Despite our strengths, we faced significant challenges with team communication and change management. Too often, code modifications were implemented without properly informing the entire team, resulting in quality issues that could have been caught with proper reviews. The lack of a structured review process and inconsistent communication about ongoing developments hindered our efficiency and code quality throughout much of the project.
 
-### What We Would Have Done Differently
+### Lessons for the Future 🌱
 
-If we had the chance to start over, we not have waited as long as we did to make concrete progress in iteration 1. We also would place a similar emphasis as we did nearing the end of the project, to clearly and frequently announce tasks we are working on to the entire team. The lack of communication in the beginning was the primary source of our problems. We gradually developed habits to correct that as the term progressed, but it would have been better if we got it right from the start. Finally, if we were to restart, we would establish a structured review process such as regular in-meeting reviews to mitigate against problematic code slipping through the cracks.
+If we could start over, we would make several key changes to our approach:
 
-### What Took the Most Time? The least? Any Surprises?
+1. Begin concrete progress earlier in iteration 1 rather than delaying action
+2. Implement the clear and frequent task announcements we eventually developed from the very beginning
+3. Establish a structured review process (like regular in-meeting code reviews) from day one to prevent problematic code from being merged
 
-What took us the most amount of time was getting the architecture right. We were consistently unhappy with some decisions we made early on and it took some time to make it the way we wanted. Examples include how to relate our domain specific objects, and how to structure the layers such that the persistence layer could be independent of Android packages. The things that took the least amount of time were quick things like assigning issues and reviewing the requirements of an iteration. Those tasks could usually be concluded in a single two hour meeting. The group agrees that the most surprising outcome was the sheer amount of difficulties we experienced with miscommunication and dealing with merge conflicts.
+Our communication issues at the start became the source of many downstream problems. Though we gradually developed better habits as the term progressed, establishing these practices earlier would have significantly improved our outcomes.
 
-### Outstanding Bugs
+### Time Investment Analysis 🕒
 
-The only outstanding bugs that we are aware of is the fact that the cover images for exercises are unresponsive to the aspect ratio of the device. The result is that the images will appear cropped or zoomed out on certain screens. A few other issues are due to deliberate decisions to cut down on features in favour of improving the quality of the code. This includes the fact that cover images are not displayed when playing back a workout, as well as the fact that completed sessions are not recorded in the app. The implementation of these features were deferred to the next iteration of the project.
+**Most Time-Consuming:** Getting the architecture right consumed the majority of our time. We continually revisited early decisions that proved problematic, particularly regarding how domain-specific objects related to each other and how to structure layers to keep the persistence layer independent of Android packages.
 
-### Revisiting the Iteration 2 Retrospective
+**Least Time-Consuming:** Administrative tasks like assigning issues and reviewing iteration requirements were relatively quick, typically completed within a single two-hour meeting.
 
-In our retrospective from iteration 2, we noted some problems we had during the final moments before the deadline as we merged our branches onto `dev`. We decided that in the following iteration we should avoid making large architectural changes to the project at such a late stage in the iteration.
+**Biggest Surprise:** The entire team was surprised by the extent of our difficulties with miscommunication and merge conflicts. These challenges were more persistent and impactful than we had anticipated.
 
-While we did become more effective working together in iteration 3, we unfortunately ran into eerily similar problems. Nearing the end of the iteration, we merged significant changes to the architecture of the project, hoping to resolve some inappropriate dependencies between the persistence layer and Android packages. This time we were careful about only merging once the team was finished with their tasks. Unfortunately, we did encounter a problem as we tried to merge the `dev` branch onto `main`. Upon investigation we identified the crux of the problem being an older pull request which had mistakenly been merged onto `main` and thereafter reverted. We're not sure why this caused our problems since theoretically the reversion should have returned the branch to a normal state. We made several attempts to resolve it such as emptying the files in the main branch, yielding unsuccessful results. We're still not sure why, but the only successful solution we managed was manual copying of the files to the main branch.
+### Outstanding Issues 🪲
 
-While we did exercise more caution this time around when making large changes, we regret being so optimistic as to expect that there wouldn't be random inconceivable errors in the very tools we were using to manage the project. In hindsight, we see that it should have been obvious to us no matter the measures we took, that making large changes to the code at such a late point in the iteration was overly optimistic and risky. In future iterations, we will remember this experience as a reminder that we cannot prevent random disruptions from occurring and from now on we will make preliminary merge commits onto main well before the due date to validate the merging software and ensure our merges are small.
+We have one known bug: cover images for exercises don't properly respond to device aspect ratios, resulting in cropping or zooming issues on certain screens. Additionally, we made deliberate decisions to defer some features to prioritize code quality:
 
-### Moving Forward
+- Cover images aren't displayed during workout playback
+- Completed sessions aren't recorded in the app
 
-While making this project, we learned that communication is extremely important. It really isn't possible to work together without telling everyone exactly what you're doing. It's important for many reasons, but one notable reason is that decisions made by one person routinely influence the decisions of other team members. This project reinforced this idea to us and, going forward, we'll focus on frequent and clear communication, structured planning, as well as rigorous code review to ensure smoother collaboration and improved code quality.
+These features were intentionally postponed to a future iteration.
+
+### Revisiting Our Previous Retrospective 🔎
+
+In our iteration 2 retrospective, we identified problems with merging branches onto `dev` close to deadlines and resolved to avoid large architectural changes late in the iteration.
+
+While our teamwork improved in iteration 3, we encountered remarkably similar issues. Despite being more cautious about timing our merges, we still implemented significant architectural changes near the end of the iteration to resolve dependencies between the persistence layer and Android packages. 
+
+When attempting to merge `dev` onto `main`, we encountered unexpected problems traced back to an older pull request that had been mistakenly merged onto `main` and subsequently reverted. Despite numerous troubleshooting attempts, the only successful solution was manually copying files to the main branch.
+
+This experience reinforced that even with increased caution, making substantial changes late in an iteration carries inherent risk. In future iterations, we'll implement preliminary merge commits well before deadlines to validate the merging process and ensure our changes remain manageable.
+
+### Moving Forward 🌅
+
+This project powerfully reinforced that effective communication is fundamental to successful collaboration. One person's decisions invariably influence the work of other team members. As we move forward, we'll prioritize:
+
+1. Frequent and transparent communication
+2. Structured planning processes
+3. Rigorous code reviews
+
+These practices will ensure smoother collaboration and consistently higher code quality in our future work together.
