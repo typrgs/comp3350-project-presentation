@@ -34,12 +34,7 @@ Our communication issues at the start became the source of many downstream probl
 
 ### Outstanding Issues 🪲
 
-We have one known bug: cover images for exercises don't properly respond to device aspect ratios, resulting in cropping or zooming issues on certain screens. Additionally, in the pursuit of prioritizing clean code practices, we had to defer some features for future iterations:
-
-- Cover images aren't displayed during workout playback
-- Completed sessions aren't recorded in the app
-
-These features will be first on our to-do list in the next iteration!
+We have one known bug: cover images for exercises don't properly respond to device aspect ratios, resulting in cropping or zooming issues on certain screens. Additionally, in the pursuit of prioritizing cleaning up technical debt, we had to defer the feature of saving completed sessions to a future iteration. This will be first on our to-do list in the next iteration!
 
 ### Revisiting Our Previous Retrospective 🔎
 
