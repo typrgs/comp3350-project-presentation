@@ -4,6 +4,8 @@ title: Vision
 include_in_header: true
 ---
 
+# Our Vision 💡
+
 ## What Is Gym Buddy?
 
 Gym Buddy is a workout assistant app that helps people stay organized and motivated as they work toward their fitness goals. It brings all workout information into one easy-to-use platform, making it simple to track routines, set goals, and see progress. By offering tools to create personalized workout plans and achievable targets, Gym Buddy is a helpful partner for anyone looking to improve their fitness.

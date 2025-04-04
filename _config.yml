@@ -41,16 +41,16 @@ mastodon_link                             :
 features                                  :
 
   - title                                 : Create Custom Workouts
-    description                           : Build customized workouts tailored for your workout splits.
-    fontawesome_icon_name                 : magic
+    description                           : Shape your dream workout so it can shape dream you!
+    fontawesome_icon_name                 : dumbbell
     
   - title                                 : Play Through Your Workouts
-    description                           : Follow your created workouts in a workout player.
+    description                           : Never forget the next step again with workout playback!
     fontawesome_icon_name                 : play-circle
 
-  - title                                 : See Past Workouts
-    description                           : View your completed workouts in a workout log.
-    fontawesome_icon_name                 : mobile
+  - title                                 : Track How You Did
+    description                           : View your completed workouts in a log to see how far you've come!
+    fontawesome_icon_name                 : chart-line
 
 
 
