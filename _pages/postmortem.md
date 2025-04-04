@@ -12,7 +12,7 @@ Our greatest strength throughout this project was our ability to adapt and repri
 
 ### Challenges 🥀
 
-Despite our strengths, we faced significant challenges with team communication and change management. Too often, code modifications were implemented without properly informing the entire team, resulting in quality issues that could have been caught with proper reviews. The lack of a structured review process and inconsistent communication about ongoing developments hindered our efficiency and code quality throughout much of the project.
+Despite our strengths, we faced significant challenges with team communication. Too often, code modifications were implemented without properly informing the entire team, resulting in quality issues that could have been caught with proper reviews. The lack of a structured review process and inconsistent communication about ongoing developments hindered our efficiency and code quality throughout the project.
 
 ### Lessons for the Future 🌱
 
@@ -26,7 +26,7 @@ Our communication issues at the start became the source of many downstream probl
 
 ### Time Investment Analysis 🕒
 
-**Most Time-Consuming:** Getting the architecture right consumed the majority of our time. We continually revisited early decisions that proved problematic, particularly regarding how domain-specific objects related to each other and how to structure layers to keep the persistence layer independent of Android packages.
+**Most Time-Consuming:** Getting the architecture right consumed the majority of our time. We continually revisited early decisions that proved problematic, particularly regarding how domain-specific objects should relate to each other and how to structure layers to keep the persistence layer independent of Android packages.
 
 **Least Time-Consuming:** Administrative tasks like assigning issues and reviewing iteration requirements were relatively quick, typically completed within a single two-hour meeting.
 
@@ -34,26 +34,26 @@ Our communication issues at the start became the source of many downstream probl
 
 ### Outstanding Issues 🪲
 
-We have one known bug: cover images for exercises don't properly respond to device aspect ratios, resulting in cropping or zooming issues on certain screens. Additionally, we made deliberate decisions to defer some features to prioritize code quality:
+We have one known bug: cover images for exercises don't properly respond to device aspect ratios, resulting in cropping or zooming issues on certain screens. Additionally, in the pursuit of prioritizing clean code practices, we had to defer some features for future iterations:
 
 - Cover images aren't displayed during workout playback
 - Completed sessions aren't recorded in the app
 
-These features were intentionally postponed to a future iteration.
+These features will be first on our to-do list in the next iteration!
 
 ### Revisiting Our Previous Retrospective 🔎
 
-In our iteration 2 retrospective, we identified problems with merging branches onto `dev` close to deadlines and resolved to avoid large architectural changes late in the iteration.
+In our iteration 2 retrospective, we identified problems with merging branches onto `dev` close to deadlines and set a goal to avoid large architectural changes late in the iteration.
 
 While our teamwork improved in iteration 3, we encountered remarkably similar issues. Despite being more cautious about timing our merges, we still implemented significant architectural changes near the end of the iteration to resolve dependencies between the persistence layer and Android packages. 
 
-When attempting to merge `dev` onto `main`, we encountered unexpected problems traced back to an older pull request that had been mistakenly merged onto `main` and subsequently reverted. Despite numerous troubleshooting attempts, the only successful solution was manually copying files to the main branch.
+When attempting to merge `dev` onto `main`, we encountered unexpected problems tracing back to an older pull request that had been mistakenly merged onto `main` and subsequently reverted. Despite numerous troubleshooting attempts, the only successful solution was manually copying files to the main branch.
 
-This experience reinforced that even with increased caution, making substantial changes late in an iteration carries inherent risk. In future iterations, we'll implement preliminary merge commits well before deadlines to validate the merging process and ensure our changes remain manageable.
+This experience reinforced that even with increased caution, making substantial changes late in an iteration carries inherent risk. In future iterations, we'll implement preliminary merge commits well before deadlines to validate the merging process and ensure this cannot happen again.
 
 ### Moving Forward 🌅
 
-This project powerfully reinforced that effective communication is fundamental to successful collaboration. One person's decisions invariably influence the work of other team members. As we move forward, we'll prioritize:
+This project greatly reinforced that effective communication is fundamental to successful collaboration. One person's decisions invariably influence the work of other team members. As we move forward, we'll prioritize:
 
 1. Frequent and transparent communication
 2. Structured planning processes
